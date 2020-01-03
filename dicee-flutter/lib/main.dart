@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:sensors/sensors.dart';
 
 void main() {
   return runApp(
@@ -31,6 +32,11 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    gyroscopeEvents.listen((GyroscopeEvent event) {
+      print(event);
+    });
+
     return Center(
       child: Row(
         children: <Widget>[

@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  sensors: ^0.4.1+5  
+
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
